@@ -43,14 +43,14 @@ func tarantula(cantidad float64) float64 {
 }
 
 func main() {
-	nombreAnimal = "Gato"
+	nombreAnimal = "Perro"
 	cantidadAnimal = 20
 	function, err := animal(nombreAnimal)
 	if err != nil {
 		fmt.Println(err)
 	} else {
-		resultado := function(float64(cantidadAnimal)
-		if (nombreAnimal == "Perro" || nombreAnimal == "Gato" ){
+		resultado := function(float64(cantidadAnimal))
+		if nombreAnimal == "Perro" || nombreAnimal == "Gato" {
 			resultado = resultado * 1000 // Hago esto para que todos los resultados queden en gramos, ya que la comida para Gatos y Perros esta dada en Kilogramos.
 		}
 		fmt.Println("La cantidad de comida para", cantidadAnimal, nombreAnimal+"s", "es de:", resultado, "Gramos.")
