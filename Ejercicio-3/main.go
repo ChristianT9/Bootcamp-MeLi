@@ -72,7 +72,7 @@ func nuevaTienda(nombre string) tienda {
 }
 
 func main() {
-	tienda := nuevaTienda("Goez S.A.")
+	tienda := nuevaTienda("Compañía S.A.")
 	p1 := nuevoProducto(grande, "Ember WF", 270000)
 	p2 := nuevoProducto(pequeño, "Goku", 100000)
 	p3 := nuevoProducto(mediano, "Asta", 152000)
