@@ -13,13 +13,13 @@ type Producto struct {
 }
 
 func (p Producto) detalle() string {
-	return fmt.Sprintf("Nombre:\t%s; Id:\t%d Precio:\t$%.2f; Cantidad:\t%d;\n", p.Nombre, p.Id, p.Precio, p.Cantidad)
+	return fmt.Sprintf("Nombre:;\t%s; Id:;\t%d; Precio:;\t$%.2f; Cantidad:;\t%d;\n", p.Nombre, p.Id, p.Precio, p.Cantidad)
 }
 
 func main() {
 	p := Producto{
 		Nombre:   "Café con leche",
-		Id:       00001,
+		Id:       34490,
 		Precio:   8000,
 		Cantidad: 2,
 	}
@@ -40,7 +40,7 @@ func main() {
 
 	d1 := []byte(p.detalle() + p2.detalle() + p3.detalle())
 
-	err := os.WriteFile("./myFileProducts.txt", d1, 0644)
+	err := os.WriteFile("../myFileProducts.txt", d1, 0644)
 	if err != nil {
 		fmt.Println("Hubo un error al crear el archivo")
 	} else {
